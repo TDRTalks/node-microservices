@@ -23,9 +23,140 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			<div class="slides"> <!-------------------------------------- Slide -------------------------------------------------------->
+				<section>
+					<h2>Real World Node.JS Microservices</h2>
+					<p>
+						<small>Ian Philpot | Sr. Software Engineer, Microsoft | <a href="http://twitter.com/tripdubroot">@tripdubroot</a></small>
+					</p>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<h2><a href="http://about.me/iphilpot">http://about.me/iphilpot</a></h2>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<h2>Microsoft</h2>
+					<h1 style="color:red">&hearts;</h1>
+					<h2>Linux</h2>
+				</section>
+
+				<section data-background="#ffffff"> <!-------------------------------------- Slide -------------------------------------------------------->
+					<img src="img/oss_msft.png" style="background:none; border:none; box-shadow:none;" alt="Open Source at Microsoft">
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<p>Question: What are Microservices?</p>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<p>Answer: Small autonomous, independently deployable services that work together.</p>
+					<small>--Sam Newman</small>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<p>Question: Why Microservices?</p>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<p>Answer: Scalability</p>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<p>Answer: Resilience</p>
+				</section>
+
+				<section> <!-------------------------------------- Slide -------------------------------------------------------->
+					<p>Answer: Different Stacks</p>
+				</section>
+
+				<section><!----------------------------------- Slide -------------------------------------------------------->
+					<ul>
+						<li>How is it built?</li>
+						<li>How can we break it?</li>
+						<li>How can we make it better?</li>
+					</ul>
+				</section>
+
+				<section>
+					<section><!----------------------------------- Slide -------------------------------------------------------->
+						<h2>So... how is it built?</h2>
+					</section>
+	
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/javascript_logo.png" style="background:none; border:none; box-shadow:none;" alt="JavaScript Shield">
+					</section>
+	
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/nodejs_logo.png" style="background:none; border:none; box-shadow:none;" alt="Node.JS Logo">
+					</section>
+	
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/grpc_logo.png" style="background:none; border:none; box-shadow:none;" alt="GRPC Logo">
+					</section>
+	
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/kubernetes_logo.png" style="background:none; border:none; box-shadow:none;" alt="Kubernetes Logo">
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/faas_logo.png" style="background:none; border:none; box-shadow:none;" alt="OpenFaaS Logo">
+						<h2>OpenFaaS</h2>
+					</section>
+	
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/prometheus_logo.png" style="background:none; border:none; box-shadow:none;" alt="Prometheus Logo">
+					</section>
+				</section>
+
+				<section>
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<h2>Great! How can we break it?</h2>
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<p>This is hard!</p>
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<p>Over Engineering?</p>
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<p>Eventual Consistency</p>
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<p>Tracing Across Services</p>
+					</section>
+				</section>
+
+				<section>
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<h2>Now, how do we make it better?</h2>
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/ddd.jpg" style="background:none; border:none; box-shadow:none;" alt="DDD Book">
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/cqrs.png" style="background:none; border:none; box-shadow:none;" alt="CQRS Logo">
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/nosql.png" style="background:none; border:none; box-shadow:none;" alt="NoSQL Cartoon"> <br>
+						<small>NoSQL vs SQL</small>
+					</section>
+
+					<section> <!-------------------------------------- Slide -------------------------------------------------------->
+						<img src="img/event_sourcing.png" style="background:none; border:none; box-shadow:none;" alt="Event Sourcing Stack"><br>
+						<small>Event Sourcing</small>
+					</section>
+				</section>
+
+				<section data-background="img/Demolition.jpg">
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +168,13 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
